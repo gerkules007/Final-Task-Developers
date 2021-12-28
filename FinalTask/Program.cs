@@ -15,7 +15,7 @@ void ReverseFillEvenNewArray(int[] inputArr, int[] changedArr)
       if (inputArr[i] % 2 == 0) changedArr[leng--] = inputArr[i];
 }
 
-int[] currArr = { 6, 7, 8, 9, -14 };
+int[] currArr = { 0, 7, 1, -14, 4 };
 int[] newArr = new int [FindEvenNumbers(currArr)];
 ReverseFillEvenNewArray(currArr, newArr);
 PrintArray(newArr);
