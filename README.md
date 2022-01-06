@@ -25,4 +25,4 @@
 
 ***Блок-схема алгоритма***
 
-![PictureMac](Flowchart.png)
+![Упс!](Flowchart.png)

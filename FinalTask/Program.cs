@@ -4,18 +4,11 @@
     Console.WriteLine();
 }
 
-int FindEvenNumbers(int[] inputArr)
+int[] FindEvenNumbers(int[] inputArr)
 {
-    return inputArr.Where(e => e % 2 == 0).Count();
+    return inputArr.Where(e => e % 2 == 0).ToArray();
 }
 
-void ReverseFillEvenNewArray(int[] inputArr, int[] changedArr)
-{
-    for (int i = inputArr.Length - 1, leng = changedArr.Length - 1; i >= 0; i--) 
-      if (inputArr[i] % 2 == 0) changedArr[leng--] = inputArr[i];
-}
-
-int[] currArr = { 0, 7, 1, -14, 4 };
-int[] newArr = new int [FindEvenNumbers(currArr)];
-ReverseFillEvenNewArray(currArr, newArr);
+int[] currArr = { 0, 1, 4, -14, 9 };
+int[] newArr = FindEvenNumbers(currArr);
 PrintArray(newArr);
